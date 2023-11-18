@@ -85,7 +85,7 @@ function makeWork(arrOfArr, func) {
 
 	for (i = 0; i < arrOfArr.length; i++) {
 		let item = arrOfArr[i];
-		let result = func(item);
+		let result = func(...item);
 
 		if (result > maxWorkerResult) {
 			maxWorkerResult = result;
