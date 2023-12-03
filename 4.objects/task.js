@@ -9,11 +9,12 @@ Student.prototype.setSubject = function(subjectName) {
 	this.subject = subjectName;
 }
 
-Student.prototype.addMarks = function(...marks) {
+Student.prototype.addMarks = function(...marksToAdd) {
 	if (!this.marks) {
+	console.log("Студент исключен")
 		return;
 	}
-	this.marks.push(...marks);
+	this.marks.push(...marksToAdd);
 }
 
 Student.prototype.getAverage = function() {
