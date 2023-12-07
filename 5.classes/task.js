@@ -71,13 +71,9 @@ class Library {
 	}
 
 	findBookBy(type, value) {
-		let findBook = this.books.find(book => book[type] === value);
-		if (typeof findBook === 'object') {
-			return findBook;
-		} else {
-			return null;
-		}
+		return this.books.find(book => book[type] == value) || null;
 	}
+
 
 	giveBookByName(bookName) {
 		let giveBook = this.books.find(book => book.name === bookName);
