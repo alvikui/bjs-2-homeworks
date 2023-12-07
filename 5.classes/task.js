@@ -80,11 +80,11 @@ class Library {
 	}
 
 	giveBookByName(bookName) {
-		let giveBoook = this.books.find(book => book.name === bookName);
-		if (typeof giveBoook === 'object') {
-			let index = this.books.indexOf(giveBoook);
+		let giveBook = this.books.find(book => book.name === bookName);
+		if (typeof giveBook === 'object') {
+			let index = this.books.indexOf(giveBook);
 			this.books.splice(index, 1);
-			return giveBoook;
+			return giveBook;
 		} else {
 			return null;
 		}
