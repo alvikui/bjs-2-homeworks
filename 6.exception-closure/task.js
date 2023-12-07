@@ -6,11 +6,9 @@
 
 function validateCount(num) {
 	try {
-		return parseCount(num);
+		parseCount(num);
 	} catch (error) {
-		return error;
-	} finally {
-
+        return error
 	}
 }
 
