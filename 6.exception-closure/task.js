@@ -1,12 +1,12 @@
 ﻿function parseCount(num) {
 	let parseResult = Number.parseInt(num);
-	if (Number.isNaN(parseResult)) throw new Error("Невалидной значение");
+	if (isNaN(parseResult)) throw new Error("Невалидной значение");
 	return parseResult;
 }
 
 function validateCount(num) {
 	try {
-		parseCount(num);
+		return parseCount(num);
 	} catch (error) {
         return error
 	}
