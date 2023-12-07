@@ -1,14 +1,14 @@
-﻿function parseCount(num) {
-	let parseResult = Number.parseInt(num);
-	if (isNaN(parseResult)) {
+﻿function parseCount(value) {
+	const result = parseFloat(value);
+	if (isNaN(result)) {
 	throw new Error("Невалидное значение");
 	}
-	return parseResult;
+	return result;
 }
 
-function validateCount(num) {
+function validateCount(value) {
 	try {
-		return parseCount(num);
+		return parseCount(value);
 	} catch (error) {
         return error;
 	}
