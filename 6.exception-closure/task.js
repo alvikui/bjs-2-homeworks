@@ -1,7 +1,8 @@
 ﻿function parseCount(num) {
 	let parseResult = Number.parseInt(num);
-	if (Number.isNaN(parseResult)) throw new Error("Невалидное значение");
-
+	if (isNaN(parseResult)) {
+	throw new Error("Невалидное значение");
+	}
 	return parseResult;
 }
 
