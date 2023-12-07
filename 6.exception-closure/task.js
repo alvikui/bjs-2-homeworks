@@ -1,7 +1,7 @@
 ﻿function parseCount(value) {
 	const result = parseFloat(value);
 	if (isNaN(result)) {
-	throw new Error("Невалидное значение");
+		throw new Error("Невалидное значение");
 	}
 	return result;
 }
@@ -10,7 +10,7 @@ function validateCount(value) {
 	try {
 		return parseCount(value);
 	} catch (error) {
-        return error;
+		return error;
 	}
 }
 
