@@ -18,7 +18,7 @@ function cachingDecoratorNew(func) {
 		if (cache.length > 5) {
 			cache.shift(); // если слишком много элементов в кеше, надо удалить самый старый (первый)
 		}
-		console.log("Вычисляем: " + result;
+		console.log("Вычисляем: " + result);
 			return "Вычисляем: " + result;
 		}
 		return wrapper;
